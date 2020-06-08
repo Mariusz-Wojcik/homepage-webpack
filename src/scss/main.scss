@@ -14,15 +14,24 @@ html {
   font-family: "lazer84";
   src: url("../assets/fonts/Lazer84.ttf"); }*/
 
+:root{
+  --background-color: #b9aeae;
+  --about-background-color: #ffffff;
+  --font-color: #000000;
+  --about-font-color: #000000;
+}
+
 .about-section {
-  background-color: #ffffff;
+  background-color: var(--about-background-color);
   max-width: 1000px;
   height: auto;
   margin: 0px auto;
   padding: 0px 0px 20px 0px; }
   .about-section__title {
+    color: var(--about-font-color);
     margin: 10px; }
   .about-section__paragraph {
+    color: var(--about-font-color);
     margin: 0px 20px;
     font-size: 16px; }
   .about-section__WTF-font {
@@ -41,7 +50,11 @@ html {
     margin: 10px; }
 
 body {
-  background-color: #b9aeae; }
+  background-color: var(--background-color); }
+
+.dark-mode{
+  width:fit-content;
+}
 
 .hamburger {
   position: absolute;
@@ -93,7 +106,7 @@ kbd {
     margin: 10px; }
 
 main {
-  margin: 60px auto 0; }
+  margin: 82px auto 0; }
 
 .main-article__week-title {
   margin: 10px;
@@ -145,7 +158,8 @@ main {
       .main-header__image {
         justify-self: center; } }
   .main-header__title {
-    text-align: center; }
+    text-align: center;
+    color: var(--font-color) }
     @media screen and (min-width: 768px) {
       .main-header__title {
         text-align: center; } }
@@ -224,7 +238,7 @@ main {
   font-size: 18px; }
 
 .top-header {
-  background-color: #ffffff;
+  background-color: #003459;
   min-height: 60px;
   position: fixed;
   top: 0px;
