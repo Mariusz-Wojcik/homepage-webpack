@@ -64,10 +64,28 @@ module.exports = {
       filename: "another.html",
     }),
     new HtmlWebpackPlugin({
+      template: "./src/pages/nauka-html.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "nauka-html.html",
+    }),
+    new HtmlWebpackPlugin({
       template: "./src/pages/nauka-css.html",
       inject: true,
       chunks: ["index"],
       filename: "nauka-css.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/nauka-javascript.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "nauka-javascript.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/rozwoj-strony.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "rozwoj-strony.html",
     }),
   ],
 };
