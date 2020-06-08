@@ -63,5 +63,11 @@ module.exports = {
       chunks: ["index", "another"],
       filename: "another.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/nauka-css.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "nauka-css.html",
+    }),
   ],
 };
