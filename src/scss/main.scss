@@ -17,8 +17,10 @@ html {
 :root{
   --background-color: #b9aeae;
   --about-background-color: #ffffff;
+  --article-background-color: #b4bdc0;
   --font-color: #000000;
   --about-font-color: #000000;
+  --link-font-color: blue;
 }
 
 .about-section {
@@ -43,7 +45,7 @@ html {
 .article-section {
   width: 100%;
   height: auto;
-  background-color: #b4bdc0;
+  background-color: var(--article-background-color);
   border: 1px solid #000000;
   margin: 5px 0px; }
   .article-section__title {
@@ -66,6 +68,7 @@ body {
 
 .JS_box {
   background-color: yellowgreen;
+  color: black;
   padding: 10px;
   border: 2px solid black;
   display: inline-block; }
@@ -97,16 +100,27 @@ kbd {
   margin-bottom: 5px; }
 
 .link-section {
-  background-color: #ffffff;
+  background-color: var(--about-background-color);
+  color: var(--about-font-color);
   max-width: 1000px;
   height: auto;
   margin: 0px auto;
   padding: 0px 0px 20px 0px; }
+  .link-section__link{
+    color: var(--link-font-color); }
   .link-section__title {
     margin: 10px; }
 
+.list__link{
+  color: var(--link-font-color);
+}
+
 main {
   margin: 82px auto 0; }
+
+.main-article__link{
+  color: var(--link-font-color);
+}
 
 .main-article__week-title {
   margin: 10px;
@@ -114,7 +128,7 @@ main {
   border-color: red;
   border-width: 0px 0px 3px 0px;
   width: fit-content;
-  background-color: #ffffff;
+  background-color: var(--about-background-color);
   position: sticky;
   top: 0; }
 
@@ -169,7 +183,8 @@ main {
         margin-right: 350px; } }
 
 .main-section {
-  background-color: #ffffff;
+  background-color: var(--about-background-color);
+  color: var(--font-color);
   max-width: 1000px;
   height: auto;
   margin: 0px auto;

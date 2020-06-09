@@ -49,13 +49,17 @@ dark.addEventListener('click', ()=>{
     if (isDark == false) {
     document.documentElement.style.setProperty('--background-color', '#000000');
     document.documentElement.style.setProperty('--font-color', '#ffffff');
-    document.documentElement.style.setProperty('--about-background-color', '#333333');
+    document.documentElement.style.setProperty('--about-background-color', '#555555');
     document.documentElement.style.setProperty('--about-font-color', '#ffffff');
+    document.documentElement.style.setProperty('--article-background-color', '#333333');
+    document.documentElement.style.setProperty('--link-font-color', 'orange');
     isDark = true;}
     else if (isDark == true) {
     document.documentElement.style.setProperty('--background-color', '#b9aeae');
     document.documentElement.style.setProperty('--font-color', '#000000');
     document.documentElement.style.setProperty('--about-background-color', '#ffffff');
     document.documentElement.style.setProperty('--about-font-color', '#000000');
+    document.documentElement.style.setProperty('--article-background-color', '#b4bdc0');
+    document.documentElement.style.setProperty('--link-font-color', 'blue');
     isDark = false;}
 })
