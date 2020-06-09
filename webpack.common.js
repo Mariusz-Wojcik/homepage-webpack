@@ -37,6 +37,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(woff|woff2|ttf|eot)$/,
+        use: 'file-loader?name=fonts/[name].[ext]!static',
+       },
     ],
   },
 

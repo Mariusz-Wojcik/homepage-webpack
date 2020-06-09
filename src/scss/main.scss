@@ -1,6 +1,9 @@
 @import "~normalize.css";
-
 @import "_variables";
+
+@font-face {
+  font-family: "lazer84";
+  src: url("../assets/fonts/Lazer84.ttf"); }
 
 html {
   box-sizing: border-box; }
@@ -10,9 +13,7 @@ html {
 *:after {
   box-sizing: inherit; }
 
-/*@font-face {
-  font-family: "lazer84";
-  src: url("../assets/fonts/Lazer84.ttf"); }*/
+
 
 :root{
   --background-color: #b9aeae;
